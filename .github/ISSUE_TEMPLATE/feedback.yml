@@ -1,0 +1,73 @@
+name: "\U0001F4AC 反馈 / Feedback"
+description: "Bug 报告、问题反馈、功能建议 — 都可以在这里提交"
+title: "[Feedback] "
+labels: ["feedback"]
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: 反馈类型 / Type
+      options:
+        - 🐛 Bug / 问题报告
+        - 💡 功能建议 / Feature Request
+        - 💬 使用体验 / Usage Feedback
+        - ❓ 使用疑问 / Question
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 描述 / Description
+      description: 请尽量详细描述你遇到的问题或建议（中英文均可）
+      placeholder: |
+        例如：
+        - 生成 XX 角色时遇到了...
+        - 希望支持 XX 类型的角色...
+        - SOUL.md 生成的 XX 部分不太准确...
+    validations:
+      required: true
+
+  - type: input
+    id: character
+    attributes:
+      label: 相关角色 / Character (可选)
+      description: 你在模仿谁？
+      placeholder: "例如：罗永浩、五条悟、李白..."
+    validations:
+      required: false
+
+  - type: dropdown
+    id: character_type
+    attributes:
+      label: 角色类型 / Character Type (可选)
+      options:
+        - 🎤 真人明星 / Celebrity
+        - 🎭 影视角色 / Movie/TV Character
+        - 🎌 动漫角色 / Anime Character
+        - 📜 历史人物 / Historical Figure
+        - 🎙️ KOL / 网红
+        - 🔀 混搭 / Character Mix
+        - 其他 / Other
+    validations:
+      required: false
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: 环境信息 / Environment (可选)
+      description: 如果是 Bug，请提供以下信息帮助排查
+      placeholder: |
+        - 操作系统：macOS / Windows / Linux
+        - AI 平台：OpenClaw / Claude / ChatGPT / 其他
+        - ManoBrowser：已安装 / 未安装（基础模式）
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 截图或日志 / Screenshots & Logs (可选)
+      description: 如有报错截图或日志，请粘贴在这里
+    validations:
+      required: false

@@ -210,3 +210,13 @@ Mimic/
 ---
 
 **⭐ 如果 Mimic 帮到了你（或你的用户），给个 Star！**
+
+---
+
+## 💬 反馈与支持
+
+使用中遇到问题？有想要的新功能？欢迎提交 Issue，我们会认真查看每一条反馈：
+
+👉 [**提交反馈 / 报告问题**](https://github.com/ClawCap/Mimic/issues/new/choose)
+
+你也可以在 [Discussions](https://github.com/ClawCap/Mimic/discussions) 中分享使用体验或提问交流。
