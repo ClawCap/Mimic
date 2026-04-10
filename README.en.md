@@ -20,7 +20,7 @@ Not imagination-driven — data-driven. Auto-collects real public data from Weib
 
 🌐 [中文](./README.md) | **English**
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![GitHub stars](https://img.shields.io/github/stars/ClawCap/Mimic.svg)](https://github.com/ClawCap/Mimic)
+<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a> <a href="https://github.com/ClawCap/Mimic"><img src="https://img.shields.io/github/stars/ClawCap/Mimic.svg" alt="GitHub stars"></a>
 
 ---
 
@@ -166,10 +166,10 @@ Mimic/
 
 Whether you're a developer or a casual user, come hang out! Share your experience, report bugs, suggest ideas, or just lurk and enjoy other people's reports!
 
-| | |
-|---|---|
-| [![Discord](https://img.shields.io/badge/Discord-Join%20us-5865F2?logo=discord&logoColor=white)](https://discord.gg/5EY7nevN5z) | Join our Discord community! Connect with developers and other users. |
-| [![Feishu](https://img.shields.io/badge/飞书群-加入-00D09C?logo=bytedance&logoColor=white)](docs/img/feishu_qr.png) | Scan QR code to join our Feishu group. |
+<table>
+  <tr><td><a href="https://discord.gg/5EY7nevN5z"><img src="https://img.shields.io/badge/Discord-Join%20us-5865F2?logo=discord&logoColor=white" alt="Discord"></a></td><td>Join our Discord community! Connect with developers and other users.</td></tr>
+  <tr><td><a href="docs/img/feishu_qr.png"><img src="https://img.shields.io/badge/飞书群-加入-00D09C?logo=bytedance&logoColor=white" alt="Feishu"></a></td><td>Scan QR code to join our Feishu group.</td></tr>
+</table>
 
 - 👉 [**Submit Issue**](https://github.com/ClawCap/Mimic/issues/new/choose) — Bug reports / Feature requests
 - 💬 [**Discussions**](https://github.com/ClawCap/Mimic/discussions) — Share your experience
