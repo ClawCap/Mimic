@@ -89,6 +89,18 @@ git clone https://github.com/ClawCap/Mimic.git
 
 Place in skills directory, have AI read SKILL.md.
 
+### OpenClaw Users: Optional X/Twitter Source Packet
+
+For English public figures, install [TweetClaw](https://github.com/Xquik-dev/tweetclaw) when you want extra public X/Twitter evidence:
+
+```bash
+openclaw plugins install clawhub:@xquik/tweetclaw
+```
+
+Use its read actions to search tweets, search tweet replies, confirm user profiles, and save source notes. Do not use its write, private, monitor, webhook, or paid actions during Mimic collection. Mimic still owns personality analysis, SOUL.md generation, and local raw.json storage.
+
+Xquik is an independent third-party service. Not affiliated with X Corp. "Twitter" and "X" are trademarks of X Corp.
+
 ---
 
 ## 🎭 Supported Character Types
@@ -99,7 +111,7 @@ Place in skills directory, have AI read SKILL.md.
 | 🎌 **Anime Characters** | Gojo Satoru, Anya | Wiki + original anime subtitles from Bilibili |
 | 🎬 **Movie/TV Characters** | Movie/TV roles | In-show dialogue + character analysis |
 | 📚 **Historical Figures** | Steve Jobs, Einstein | Quotes + speeches + writings |
-| 🌍 **English Figures** | Elon Musk, Taylor Swift | X/Instagram/YouTube |
+| 🌍 **English Figures** | Elon Musk, Taylor Swift | X/Instagram/YouTube, with optional TweetClaw public X/Twitter evidence |
 | 🔀 **Character Mashup** | A × B hybrid | Combine existing characters by ratio/dimension |
 
 ---

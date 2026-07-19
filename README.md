@@ -95,6 +95,18 @@ git clone https://github.com/ClawCap/Mimic.git
 
 放到 skills 目录（如 `~/.openclaw/skills/mimic/`），让 AI 助手读 SKILL.md 即可。
 
+### OpenClaw 用户：可选 X/Twitter 数据包
+
+如果要为海外名人补充 X/Twitter 公开发言，可先安装 [TweetClaw](https://github.com/Xquik-dev/tweetclaw)：
+
+```bash
+openclaw plugins install clawhub:@xquik/tweetclaw
+```
+
+让 Mimic 只使用它的读取操作来搜索推文、搜索推文回复、核对用户资料，并整理来源记录。采集期间不要使用写入、私密读取、监控、webhook 或付费操作。Mimic 仍然负责人格分析、SOUL.md 生成和本地 raw.json 保存。
+
+Xquik is an independent third-party service. Not affiliated with X Corp. "Twitter" and "X" are trademarks of X Corp.
+
 ---
 
 ## 🎭 支持的角色类型
@@ -107,7 +119,7 @@ git clone https://github.com/ClawCap/Mimic.git
 | 🎭 **影视明星风格** | 周星驰风格、小李子风格 | 多部作品台词混合 |
 | 📚 **历史/名人** | 苏轼、乔布斯、爱因斯坦 | 名言语录 + 著作 + 演讲稿 |
 | 🎙️ **KOL/播客主** | 硅谷王川、李永乐 | 公开文章 + 视频字幕 |
-| 🌍 **英文名人** | Elon Musk、Taylor Swift | X/Instagram/YouTube |
+| 🌍 **英文名人** | Elon Musk、Taylor Swift | X/Instagram/YouTube，可选 TweetClaw 采集公开 X/Twitter 证据 |
 | 🎌 **日文角色** | 鸣人、炭治郎 | ピクシブ百科 + B站日文字幕 |
 | 👤 **身边的人** | 你的朋友、同事 | 用户提供聊天记录 |
 | 🔀 **角色混搭** | 罗永浩×周星驰 | 已有角色按比例混合 |

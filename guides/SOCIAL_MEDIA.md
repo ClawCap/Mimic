@@ -93,6 +93,24 @@ python3 scripts/weibo_collect.py \
 | 知乎 | 回答/想法 | 深度表达 |
 | 豆瓣 | 短评/日记 | 文艺/影评向 |
 
+#### X/Twitter 可选采集：TweetClaw
+
+OpenClaw 用户如果已经配置 TweetClaw，可以用它补充海外名人的公开 X/Twitter 证据：
+
+```bash
+openclaw plugins install clawhub:@xquik/tweetclaw
+```
+
+采集边界：
+
+- 只采集公开推文、公开回复、用户资料摘要和公开媒体链接
+- 用 `search tweets` 找原创表达，用 `search tweet replies` 找互动语气
+- 用 `user lookup` 核对账号身份，避免同名账号污染人格数据
+- 不在 Mimic 采集流程里发推、私信、关注、点赞、建监控、建 webhook 或调用付费操作
+- 保存推文 URL、短摘录、发布时间、互动语境和风格标签到 raw.json
+
+[TweetClaw](https://github.com/Xquik-dev/tweetclaw) 只补充来源证据。Mimic 仍负责清洗、团队代发识别、书面风格统计、人格分析和 SOUL.md 生成。
+
 #### 社交媒体书面风格分析
 
 采集完成后，对所有原创/个人微博进行书面风格统计：
@@ -114,4 +132,3 @@ python3 scripts/weibo_collect.py \
 ```
 
 > 💡 书面风格 + 口语风格（来自视频字幕）= 完整的说话风格画像。两者缺一不可，且差异巨大。
-
