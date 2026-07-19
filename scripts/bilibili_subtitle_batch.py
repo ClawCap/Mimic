@@ -9,6 +9,17 @@ bilibili_subtitle_batch.py — B站字幕批量提取
 import subprocess, json, re, time, sys, os, argparse
 
 
+def normalize_subtitle_url(url):
+    """将 B站字幕地址规范化为安全的 HTTPS URL。"""
+    if not isinstance(url, str):
+        raise ValueError("字幕地址必须是字符串")
+    if url.startswith("//"):
+        return f"https:{url}"
+    if url.startswith("https://"):
+        return url
+    raise ValueError("字幕地址必须使用 HTTPS")
+
+
 def fetch_api_mano(url, mcp_endpoint, api_key):
     """通过 ManoBrowser fetch_api 请求（带cookie）"""
     payload = json.dumps({
@@ -67,7 +78,10 @@ def extract_subtitle(bvid, mcp_endpoint, api_key, output_dir):
     if not subs:
         return {"bvid": bvid, "title": title, "status": "no_subtitle"}
 
-    sub_url = "https:" + subs[0]['subtitle_url']
+    try:
+        sub_url = normalize_subtitle_url(subs[0]['subtitle_url'])
+    except (KeyError, TypeError, ValueError):
+        return {"bvid": bvid, "title": title, "status": "invalid_subtitle_url"}
 
     # Step 3: 下载字幕
     dl = subprocess.run(["curl", "-sL", sub_url], capture_output=True, text=True, timeout=15)
