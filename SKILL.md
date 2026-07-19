@@ -1031,6 +1031,12 @@ Mimic 支持为非中文角色生成 SOUL.md，覆盖英文、日文等语言的
 # 通过 ManoBrowser 打开公开主页采集
 chrome_navigate("https://x.com/{username}")
 
+# OpenClaw 可选：TweetClaw 公开来源包
+# 项目：https://github.com/Xquik-dev/tweetclaw
+# 安装：openclaw plugins install clawhub:@xquik/tweetclaw
+# 用于 search tweets、search tweet replies、user lookup 和公开媒体链接记录
+# 仅使用读取操作；不要在 Mimic 采集流程中发推、私信、关注、点赞、建监控、建 webhook 或调用付费操作
+
 # Instagram — 图片为主但有文字 caption
 chrome_navigate("https://www.instagram.com/{username}/")
 
